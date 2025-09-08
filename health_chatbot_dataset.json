@@ -1,0 +1,15 @@
+{
+  "diseases": {
+    "dengue": {
+      "symptoms": ["High fever", "Severe headache", "Pain behind eyes", "Muscle and joint pain", "Rash"]
+    },
+    "malaria": {
+      "symptoms": ["Fever", "Chills", "Headache", "Nausea", "Sweating"]
+    }
+  },
+  "vaccination_schedule": {
+    "polio": "At birth, 6 weeks, 10 weeks, 14 weeks",
+    "hepatitis": "At birth, 1 month, 6 months",
+    "measles": "9 months, 15 months"
+  }
+}
