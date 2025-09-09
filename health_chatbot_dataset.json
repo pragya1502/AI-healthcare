@@ -1,15 +1,92 @@
 {
+  "greetings": {
+    "hello": "Hello! I am your Health Assistant 🤖. You can ask about diseases, symptoms, vaccination schedules, first aid, or health programs. For example, 'What are symptoms of dengue?' or 'Tell me polio vaccination schedule'.",
+    "hi": "Hi there! I can help with health info, preventive tips, first aid, and emergency contacts. Try 'How to treat a burn?' or 'Symptoms of malaria'."
+  },
   "diseases": {
     "dengue": {
-      "symptoms": ["High fever", "Severe headache", "Pain behind eyes", "Muscle and joint pain", "Rash"]
+      "symptoms": ["High fever", "Severe headache", "Pain behind eyes", "Muscle and joint pain", "Rash"],
+      "causes": ["Mosquito bite (Aedes aegypti)"],
+      "treatment": ["Rest", "Hydration", "Paracetamol for fever", "Medical supervision if severe"],
+      "prevention": ["Avoid mosquito bites", "Use mosquito nets", "Remove stagnant water"]
     },
     "malaria": {
-      "symptoms": ["Fever", "Chills", "Headache", "Nausea", "Sweating"]
+      "symptoms": ["Fever", "Chills", "Headache", "Nausea", "Sweating"],
+      "causes": ["Mosquito bite (Anopheles)"],
+      "treatment": ["Anti-malarial medicines", "Rest", "Hydration"],
+      "prevention": ["Mosquito nets", "Insect repellents"]
+    },
+    "covid-19": {
+      "symptoms": ["Fever", "Cough", "Shortness of breath", "Loss of taste or smell"],
+      "causes": ["Coronavirus infection"],
+      "treatment": ["Rest", "Hydration", "Paracetamol", "Medical supervision if severe"],
+      "prevention": ["Wearing masks", "Hand washing", "Vaccination"]
+    },
+    "typhoid": {
+      "symptoms": ["High fever", "Weakness", "Stomach pain", "Headache", "Loss of appetite"],
+      "causes": ["Salmonella typhi bacteria", "Contaminated food or water"],
+      "treatment": ["Antibiotics", "Hydration", "Rest"],
+      "prevention": ["Safe drinking water", "Proper sanitation", "Vaccination"]
+    },
+    "tuberculosis": {
+      "symptoms": ["Persistent cough", "Fever", "Night sweats", "Weight loss"],
+      "causes": ["Mycobacterium tuberculosis bacteria"],
+      "treatment": ["Anti-TB medication", "Medical supervision"],
+      "prevention": ["Vaccination (BCG)", "Avoid close contact with infected person"]
     }
   },
   "vaccination_schedule": {
     "polio": "At birth, 6 weeks, 10 weeks, 14 weeks",
     "hepatitis": "At birth, 1 month, 6 months",
-    "measles": "9 months, 15 months"
+    "measles": "9 months, 15 months",
+    "covid-19": "1st dose after 12 years of age, 2nd dose after 3 months, booster after 9 months",
+    "tetanus": "At birth, 6 weeks, 10 weeks, 14 weeks, booster at 4-6 years"
+  },
+  "first_aid": {
+    "burns": "Cool the area with running water, avoid ice, cover with clean cloth",
+    "cuts": "Clean with water, apply antiseptic, cover with bandage",
+    "fainting": "Lay the person down, elevate legs, loosen tight clothing, keep them calm",
+    "snake bite": "Keep the person calm, immobilize the affected limb, seek medical help immediately, do not suck venom"
+  },
+  "emergency_numbers": {
+    "ambulance": "108",
+    "police": "100",
+    "fire": "101",
+    "health_helpline": "1075"
+  },
+  "health_tips": [
+    "Drink at least 2-3 liters of water daily",
+    "Sleep 7-8 hours every night",
+    "Wash hands regularly",
+    "Exercise at least 30 minutes a day",
+    "Eat a balanced diet with fruits and vegetables",
+    "Avoid smoking and excessive alcohol consumption"
+  ],
+  "symptom_checker": {
+    "fever + headache + rash": ["dengue", "typhoid"],
+    "fever + chills + sweating": ["malaria"],
+    "cough + fever + night sweats": ["tuberculosis"]
+  },
+  "outbreak_alerts": {
+    "odisha": ["Dengue outbreak in Bhubaneswar - avoid stagnant water"],
+    "jharkhand": ["Malaria cases rising in Ranchi district"]
+  },
+  "health_programs": {
+    "pulse_polio": "Every year in January and July, free polio vaccination for children under 5",
+    "national_tb_program": "Free TB screening and treatment at government hospitals"
+  },
+  "faq": {
+    "can_dengue_spread_person_to_person": "No, dengue spreads only through mosquito bites",
+    "next_polio_drive": "January 15-20, 2025 in Odisha"
+  },
+  "medicines": {
+    "paracetamol": {"uses": ["fever", "headache"], "dosage": "500mg every 6 hours", "note": "Do not exceed 4g/day"},
+    "ORS": {"uses": ["dehydration", "diarrhea"], "dosage": "As per packet instructions"}
+  },
+  "hospitals": {
+    "bhubaneswar": [
+      {"name": "AIIMS Bhubaneswar", "contact": "0674-2301400"},
+      {"name": "Capital Hospital", "contact": "0674-2390100"}
+    ]
   }
 }
